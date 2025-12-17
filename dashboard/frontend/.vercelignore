@@ -1,0 +1,23 @@
+# Ignore development files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore node_modules (will be installed by Vercel)
+node_modules
+
+# Ignore build artifacts
+.next
+out
+
+# Ignore test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Ignore documentation
+README.md
+BIGQUERY_SETUP.md
+

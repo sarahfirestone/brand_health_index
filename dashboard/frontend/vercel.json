@@ -1,0 +1,11 @@
+{
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "env": {
+    "GOOGLE_CLOUD_PROJECT": "trendle-469110",
+    "BIGQUERY_DATASET": "brand_health_dev",
+    "BIGQUERY_LOCATION": "US",
+    "NEXT_PUBLIC_APP_NAME": "TD Bank Health Monitor"
+  }
+}
+
