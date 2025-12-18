@@ -94,7 +94,10 @@ There were **3 models** we used to compare and validate that we were using the b
   - Generalize it for our similar social media company data
 
 ### Complaints data
-This is another data source we have for the perceptions bucket, that has its own tab in the dashboard. You have to upload the data from the gcp. Then run the code to clean the data to keep the relevant columns. The volume of weekly complaints is important so we created a way to preserve that information in the final score. We found the weekly average to get a value between -1 and 1. To factor in volume, we took the number of complaints divided by the 95th percentile of complaints. Finally, to get the final advocacy score, we did ```50*(1 + the average * the minimum of either 1 or that value)```\
+This is another data source we have for the perceptions bucket, that has its own tab in the dashboard. You have to upload the data from the gcp/csv from website (https://www.consumerfinance.gov/data-research/consumer-complaints/search/?company=TD%20BANK%20US%20HOLDING%20COMPANY&date_received_max=2025-12-08&date_received_min=2025-09-28&page=1&searchField=all&searchText=TD%20BANK%20US%20HOLDING%20COMPANY&size=25&sort=created_date_desc&tab=List).<br/> 
+Then run the code to clean the data to keep the relevant columns.<br/> 
+****Recommend** to running the complaint data code seperately in the **seperate python file** not connected to GCP if you are not doing the automatic pulling. The same code is in this folder in the repository in a seperate file, **you can run that instead**.<br/>  
+The volume of weekly complaints is important so we created a way to preserve that information in the final score. We found the weekly average to get a value between -1 and 1. To factor in volume, we took the number of complaints divided by the 95th percentile of complaints. Finally, to get the final advocacy score, we did ```50*(1 + the average * the minimum of either 1 or that value)```\
 The dataset includes the weekly start date and complaints score and is saved as```weekly_compalints_{start_date}_{end_date}.csv```. The values also made sense since higher scores if less complaints (since negative sentiment = bad). This data will be used on the complaints tab of the dashboard.
 
 ## 3. Engagement Bucket:
