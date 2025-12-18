@@ -1,4 +1,6 @@
 # How to run the code to calcuate the scores
+## BigQuery note:
+That this code was ran in BigQuery and all the data was uploaded/connected to BigQuery. Please comment all """%%bigquery...""" code lines if you are **NOT using BigQuery** to read in datasets, like using Pandas or your preferred way to read in a dataset and save a dataset (the saved dataset lines will also have to be adjusted). 
 ## 1. Awareness Bucket:
 The awareness Bucket is calculated using the Google Trends data. There are two datasets collected from Google Trends: one comparing TD bank to the other top banks (Chase Bank, Bank of America, Citibank and Capital One), and another comparing TD bank to the Northeast regional banks (PNC bank, Citizens bank, U.S. Bancorp and Truist)\
 *If you want to change these 4 banks you will need to change that in the Google Trends Data collection step above
