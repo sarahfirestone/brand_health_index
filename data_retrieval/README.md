@@ -154,7 +154,15 @@ The Trends data collection process involves:
 4. **Storage**: Data is saved in NDJSON format to GCS for Fivetran ingestion
 
 ### Manual Collection Process
+1. Visit 'https://trends.google.com/trends/'
 
+2. Add the search terms. The search terms would be the names of the banks mentioned in group 1 and group 2. In the first iteration, add all the search terms from group 1 and in the next iteration add the search terms from group 2.
+
+3. Using the date dropdown menu, select the custom date range option and enter the chosen start date and end date.
+
+4. After that, under the "interest over time" chart and "interest by subregion" download the data. This will download the google trends score for all the search terms for the specified date range.
+
+Note : This is a manual process and you will need to do this multiple times for both the groups and different date ranges.
 
 
 #### Time Series Data
