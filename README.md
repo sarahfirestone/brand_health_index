@@ -40,4 +40,5 @@ However, we also wanted to account for the weekly volume of tweets as a metric. 
 To create the weekly brand index score, each score is multiplied by a weight and then each product is summed together. Currently the weight is 0.25, however, in the future someone can adjust this value depending on the volume of data for each bucket or the importance. 
 
 ### Dash Board 
-The documentation and code to create the dashboard is in the ```dashboard``` folder.
+The documentation and code to create the dashboard is in the ```dashboard``` folder.<br/>
+The link for the dashbaord is https://brand-health-frontend-deploy.vercel.app/ 
